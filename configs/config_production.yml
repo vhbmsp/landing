@@ -1,0 +1,8 @@
+debug: false
+mysql:
+    host: 'localhost'
+    dbname: 'database'
+    user: 'user'
+    password: 'password'
+
+base_url: http://www.example.com

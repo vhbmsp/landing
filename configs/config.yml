@@ -1,0 +1,11 @@
+debug: false
+environments:
+    production: ['www.example.com', 'example.com']
+    staging: ['staging.example.com']
+    develop: ['www.example.loc']
+
+mysql: ~
+base_url: ~
+
+
+

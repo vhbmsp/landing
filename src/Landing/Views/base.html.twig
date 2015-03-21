@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>{% block metaTitle %}Default Title{% endblock %}</title>
+    <meta name="author" content="Vasco Pinheiro">
+
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
+    {% block head %}
+        <!-- this may be extended or overwritten -->
+        <style>
+            h1 {color: green;}
+        </style>
+    {% endblock %}
+</head>
+<body>
+<a href="{{ url('index') }}">Index page</a>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <div class="base_div">{{ myCommonContents | concat123 }} filter</div>
+
+    <footer>
+        Footer content <br />
+        Made by Vasco Pinheiro <br />
+        Powered by:
+        <a href="http://silex.sensiolabs.org/" target="_blank">Silex</a>,
+        <a href="http://twig.sensiolabs.org/" target="_blank">Twig</a>,
+        <a href="https://getcomposer.org/" target="_blank">Composer</a> and
+        <a href="http://php.net/" target="_blank">PHP</a>
+
+    </footer>
+
+    {% block javascripts %}{% endblock %}
+
+</body>
+</html>

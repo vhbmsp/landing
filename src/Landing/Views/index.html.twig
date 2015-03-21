@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block metaTitle %}My Index Page{% endblock %}
+
+{% block head %}
+    <!-- inherit parent template head block -->
+    {{ parent() }}
+
+    <!-- add extra styles to header -->
+    <style type="text/css">
+        .important { font-style: italic; }
+    </style>
+
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="important">This is my block content!</h1>
+
+    <div class="content">{{ myContent }}</div>
+
+{% endblock %}
+
+
